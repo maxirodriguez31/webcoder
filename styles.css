@@ -1,0 +1,284 @@
+/*reset css*/
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*estilo principal de las paginas*/
+.pagina {
+    display: grid;
+    grid-template-rows: 8% 1fr 12%;
+    height: 100vh;
+}
+
+header {
+    background-color: antiquewhite
+}
+
+main {
+    background-color: burlywood;
+}
+
+footer {
+    background-color: antiquewhite;
+}
+
+/*barra de navegacion*/
+.barra-de-navegacion {
+    display: flex;
+    flex-direction: row;
+    padding: 1% 1%;
+    margin: 0;
+    background-color: antiquewhite;
+    justify-content: right;
+    width: 100%;
+    height: 100;
+    gap: 10px;
+}
+
+.barra-de-navegacion a {
+    text-decoration: none;
+}
+
+.barra-de-navegacion img {
+    height: 30px;
+    width: 30px;
+    border: none;
+}
+
+/*estilo de titulos y textos*/
+h1 { 
+    color: firebrick;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1%;
+}
+
+h2 {
+    color: rgb(210, 57, 30);
+    text-align: center;
+    font-size: 28px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 22px;
+    color: blanchedalmond;
+
+}
+
+h4 {
+    color: rgb(109, 109, 109);
+}
+
+p {
+    color: rgb(207, 118, 2);
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 2%;
+}
+
+/*estilos de index*/
+.imagenes {
+    text-align: center;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2%;
+    border: 30px firebrick;
+}
+
+.menu {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+    padding-bottom: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    background-color: rgb(207, 118, 2);
+    color: burlywood;
+    padding: 20px 40px;
+    font-size: 1.1em;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;  
+  gap: 40px;               
+  padding: 20px;
+  flex-wrap: wrap;    
+}
+
+.item {
+  text-align: center;
+  width: 300px;             
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;   
+}
+
+.noticias {
+  display: flex;
+  justify-content: center;   
+  gap: 30px;                 
+  padding: 20px;
+  flex-wrap: wrap;           
+}
+
+.noticia {
+  width: 300px;
+  background-color: antiquewhite;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.noticia h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.noticia p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/*estilo del index-footer*/
+
+.footer {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: brown;
+
+}
+.footer img{
+    width: 25px;
+}
+
+.titulo-footer {
+    margin-top: 20px;
+
+}
+
+/*estilo de productos*/
+
+.productos-h1 {
+    margin-bottom: 15px;
+}
+
+/*estilo del carrito*/
+
+.main-carrito {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-carrito textarea {
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    font-size: 16px;
+    background-color: antiquewhite;
+}
+
+.carrito {
+    display: flex;
+    justify-content: center;
+}
+
+.botones button {
+    height: 30px;
+    font-size: 15px;
+    background-color: antiquewhite;
+    color: chocolate;
+
+}
+
+.botones a {
+    text-decoration: none;
+    color: chocolate;
+}
+
+/*estilo para celular*/
+
+@media (max-width: 768px) {
+    .pagina {
+        display: grid;
+        grid-template-rows: 8% 1fr 12%;
+        height: 100vh;
+        grid-template-columns: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    main img {
+        width: 90%;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        font-size: 14px;
+
+    }
+
+    .menu a {
+        padding: 10px 10px;
+        margin: 10px;
+    }
+
+    .galeria {
+        width: 100%;
+        gap: 10px;
+        padding: 30px;
+    }
+
+    .galeria .item {
+        width: 130px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .titulo-footer {
+        display: none;
+    } 
+
+    .main-carrito {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
