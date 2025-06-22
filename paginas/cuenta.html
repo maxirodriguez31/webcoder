@@ -10,13 +10,15 @@
     <div class="pagina">
         <header>
              <nav class="barra-de-navegacion">
-                <a href="paginas/cuenta.html"><img src="../imagenes/account.color.1.png" alt="account"></a>
                 <a href="pedidos.html"><img src="../imagenes/cart.color.1.png" alt="cart-logo"></a>
                 <a href="../index.html"><img src="../imagenes/home.color.1.png" alt="home-logo"></a>
             </nav>
         </header>
 
         <main>
+            <h1>Tu pedido</h1>
+            <p id="resultado"></p>
+
 
         </main>
 
@@ -31,6 +33,15 @@
         </footer>
 
     </div>
+    <script>
+    // Leer el valor del textarea desde la URL
+    const params = new URLSearchParams(window.location.search);
+    const pedido = params.get("pedido");
+
+    // Mostrarlo en el HTML
+    document.getElementById("resultado").textContent = pedido || "No hay pedido.";
+  </script>
+
     
 </body>
 </html>

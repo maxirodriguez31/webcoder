@@ -20,8 +20,20 @@
         <main>
             <h1>Distribuidora 21 de septiembre</h1>
             <p>Distribuidora de alimentos especializada en quesos y embutidos</p>
-            <div class="imagenes">
-                <img src="imagenes/embutidos.jpg" alt="embutidos">
+            <div class="carrusel">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <div class="slides">
+                    <div class="slide"><img src="imagenes/embutidos.jpg" alt="Imagen 1"></div>
+                    <div class="slide"><img src="imagenes/embutidos.jpg" alt="Imagen 2"></div>
+                    <div class="slide"><img src="imagenes/embutidos.jpg" alt="Imagen 3"></div>
+                </div>
+                <div class="navegacion">
+                    <label for="slide1" class="nav"></label>
+                    <label for="slide2" class="nav"></label>
+                    <label for="slide3" class="nav"></label>
+                </div>
             </div>
             <div class="menu">
                 <a href=#quienes-somos>Quienes somos</a>
