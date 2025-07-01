@@ -1,0 +1,49 @@
+//variables
+@import "../abstracts/variables";
+
+/*estilos de index*/
+@import "../components/images";
+
+main img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2%;
+    border: 30px $color-h1;
+}
+
+@media (max-width: 768px) {
+    main img {
+        width: 90%;
+    }
+}
+
+@import "../components/buttons";
+@import "../components/galery";
+
+.noticias {
+  display: flex;
+  justify-content: center;   
+  gap: 30px;                 
+  padding: 20px;
+  flex-wrap: wrap;           
+}
+
+.noticia {
+  width: 300px;
+  background-color: $color-secundario;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.noticia h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.noticia p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+@import "../components/caroussel";

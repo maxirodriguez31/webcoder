@@ -1,0 +1,32 @@
+/*estilo del footer*/
+
+.footer {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: brown;
+
+}
+.footer img{
+    width: 25px;
+}
+
+.titulo-footer {
+    margin-top: 20px;
+
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .titulo-footer {
+        display: none;
+    } 
+}

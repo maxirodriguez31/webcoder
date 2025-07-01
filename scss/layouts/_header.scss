@@ -1,0 +1,18 @@
+
+//mixin
+@import "../abstracts/mixin";
+
+/*barra de navegacion */
+.barra-de-navegacion {
+    @include nav-bar;
+}
+
+.barra-de-navegacion a {
+    text-decoration: none;
+}
+
+.barra-de-navegacion img {
+    height: 30px;
+    width: 30px;
+    border: none;
+}

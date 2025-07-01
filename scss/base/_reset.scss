@@ -1,0 +1,40 @@
+//variables
+@import "../abstracts/variables";
+
+/* reset */
+
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*estilo general */
+
+.pagina {
+    display: grid;
+    grid-template-rows: 8% 1fr 12%;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .pagina {
+        display: grid;
+        grid-template-rows: 8% 1fr 12%;
+        height: 100vh;
+        grid-template-columns: 100%;
+    }
+}
+
+header {
+    background-color: $color-secundario;
+}
+
+main {
+    background-color: $color-principal;
+}
+
+footer {
+    background-color: $color-secundario;
+}
