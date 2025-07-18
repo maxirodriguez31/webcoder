@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Distribuidora de alimentos especializada en quesos y embutidos.">
+    <meta name="keywords" content="distribuidora, alimentos, luis guillon, quesos, embutidos, fiambres, jamones">
     <link rel="stylesheet" href="css/main.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
@@ -10,7 +12,7 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <title>Distribuidora 21 de septiembre</title>
+    <title>Distribuidora 20 de septiembre</title>
   </head>
 
   <body>
@@ -34,12 +36,17 @@
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html"
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
                     >Pagina principal</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="paginas/productos.html">Productos</a>
+                  <a class="nav-link" href="paginas/productos.html"
+                    >Productos</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="paginas/pedidos.html">Carrito</a>
@@ -47,7 +54,6 @@
                 <li class="nav-item">
                   <a class="nav-link" href="paginas/cuenta.html">Cuenta</a>
                 </li>
-                
               </ul>
               <span class="navbar-text">
                 El lugar donde encontrar lo que necesitas para tu negocio
@@ -58,28 +64,78 @@
       </header>
       <!--Titulo, subtitulo,imagen principal y botones-->
       <main>
-        <h1>Distribuidora 21 de septiembre</h1>
+        <h1>Distribuidora 20 de septiembre</h1>
         <p>Distribuidora de alimentos especializada en quesos y embutidos</p>
-        <div class="carrusel">
-          <input type="radio" name="slider" id="slide1" checked />
-          <input type="radio" name="slider" id="slide2" />
-          <input type="radio" name="slider" id="slide3" />
-          <div class="slides">
-            <div class="slide">
-              <img src="imagenes/embutidos.jpg" alt="Imagen 1" />
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagenes/quesos.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Distribuidores oficiales de</h5>
+                <p>
+                  La Sorianita
+                </p>
+              </div>
             </div>
-            <div class="slide">
-              <img src="imagenes/embutidos.jpg" alt="Imagen 2" />
+            <div class="carousel-item">
+              <img src="imagenes/jamones.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Distribuidores oficiales de</h5>
+                <p>
+                  Escudetto
+                </p>
+              </div>
             </div>
-            <div class="slide">
-              <img src="imagenes/embutidos.jpg" alt="Imagen 3" />
+            <div class="carousel-item">
+              <img src="imagenes/fiambres.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Distribuidores oficiales de</h5>
+                <p>
+                  214
+                </p>
+              </div>
             </div>
           </div>
-          <div class="navegacion">
-            <label for="slide1" class="nav"></label>
-            <label for="slide2" class="nav"></label>
-            <label for="slide3" class="nav"></label>
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
         <div class="menu">
           <a href="#quienes-somos">Quienes somos</a>
@@ -90,40 +146,116 @@
         </div>
         <h2>PRODUCTOS DESTACADOS</h2>
         <section class="galeria">
-          <div class="item">
-            <img src="imagenes/embutidos.jpg" alt="Imagen 1" />
-            <h3>Jamon Codido Escudetto</h3>
-          </div>
-          <div class="item">
-            <img src="imagenes/embutidos.jpg" alt="Imagen 2" />
-            <h3>Queso Dambo La Sorianita</h3>
-          </div>
-          <div class="item">
-            <img src="imagenes/embutidos.jpg" alt="Imagen 3" />
-            <h3>Paleta cocida Escudetto</h3>
-          </div>
-          <div class="item">
-            <img src="imagenes/embutidos.jpg" alt="Imagen 4" />
-            <h3>Queso Cremoso La Sorianita</h3>
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="../imagenes/jamon1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Jamon 214</h5>
+                  <p class="card-text">$7.640,00 x Kg</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="../imagenes/jamon2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Jamon Escudetto</h5>
+                  <p class="card-text">$5.800,00 x Kg</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="../imagenes/jamon1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Jamon Generico</h5>
+                  <p class="card-text">$6.120,00 x Kg</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="../imagenes/jamon2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Jamon generico</h5>
+                  <p class="card-text">$9.800 x Kg</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <h2>PROMOCIONES</h2>
         <section class="galeria">
-          <div class="item">
-            <img src="imagenes/embutidos.jpg" alt="Imagen 1" />
-            <h3>Jamon Codido Escudetto</h3>
-          </div>
-          <div class="item">
-            <img src="imagenes/embutidos.jpg" alt="Imagen 2" />
-            <h3>Queso Dambo La Sorianita</h3>
-          </div>
-          <div class="item">
-            <img src="imagenes/embutidos.jpg" alt="Imagen 3" />
-            <h3>Paleta cocida Escudetto</h3>
-          </div>
-          <div class="item">
-            <img src="imagenes/embutidos.jpg" alt="Imagen 4" />
-            <h3>Queso Cremoso La Sorianita</h3>
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="../imagenes/queso1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dambo La Sorianita</h5>
+                  <p class="card-text">$8.400,00 x Kg</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="../imagenes/cremoso.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cremoso La Sorianita</h5>
+                  <p class="card-text">$6.300,00 x Kg</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="../imagenes/queso1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Queso Generico</h5>
+                  <p class="card-text">$6.120,00 x Kg</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="../imagenes/cremoso.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Queso Generico</h5>
+                  <p class="card-text">$9.800 x Kg</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -152,29 +284,41 @@
             </p>
           </div>
         </section>
+        <h2>Ubicacion</h2>
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.134798606456!2d-58.45319212338461!3d-34.8025503680277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3ce16ebb515%3A0xafcca9f482ec1d34!2sDistribuidora%2020%20De%20Septiembre!5e0!3m2!1ses!2sar!4v1752821252642!5m2!1ses!2sar"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </main>
 
       <footer>
         <div class="footer" id="redes">
-          <a href="instagram.com"
+          <a href="https://www.instagram.com"
             ><img
               src="imagenes/instagram.png"
               alt="inst-logo"
             />@distrib21septiembre</a
           >
-          <a href="facebook.com"
+          <a href="https://facebook.com"
             ><img
               src="imagenes/facebook.png"
               alt="face-logo"
             />@distrib21septiembre</a
           >
-          <a href="gmail.com"
+          <a href="https://gmail.com"
             ><img
               src="imagenes/gmail.png"
               alt="gmail-logo"
             />distrib@gmail.com</a
           >
-          <a href="whatsapp.com"
+          <a href="https://whatsapp.com"
             ><img src="imagenes/whatsapp.png" alt="wsp-logo" />+11 2222 2222</a
           >
         </div>

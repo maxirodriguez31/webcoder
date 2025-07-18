@@ -1,13 +1,13 @@
 /*estilo de titulos y textos*/
 h1 { 
-    color: firebrick;
+    color: firebrick !important; 
     text-align: center;
     text-transform: uppercase;
     margin-top: 1%;
 }
 
 h2 {
-    color: rgb(210, 57, 30);
+    color: rgb(210, 57, 30) !important; 
     text-align: center;
     font-size: 28px;
 }
@@ -15,12 +15,12 @@ h2 {
 h3 {
     text-align: center;
     font-size: 22px;
-    color: blanchedalmond;
+    color: blanchedalmond !important;
 
 }
 
 h4 {
-    color: rgb(109, 109, 109);
+    color: rgb(109, 109, 109) !important;
 }
 
 p {
