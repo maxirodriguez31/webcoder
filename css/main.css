@@ -361,6 +361,7 @@ input[type=radio] {
   border: 2px solid #ccc;
   margin: auto;
   margin-bottom: 70px;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */
